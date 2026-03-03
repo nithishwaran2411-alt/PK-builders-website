@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PK Builders – Engineering Modern Infrastructure</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header id="header">
+        <div class="container nav-wrapper">
+            <div class="logo">PK Builders</div>
+
+            <nav class="nav-links">
+                <a href="#specs">Our Services</a>
+                <a href="#features">Why Choose Us</a>
+                <a href="#applications">Projects</a>
+                <a href="#faq">FAQ</a>
+                <button id="contactBtn" class="btn-primary">Contact Us</button>
+            </nav>
+        </div>
+    </header>
+
+
+    <!-- HERO -->
+    <section class="hero container">
+        <div class="hero-left">
+
+            <div class="hero-img-wrapper">
+                <img id="mainHero" src="assets/images/site1.jpg" class="hero-main-img" alt="">
+            </div>
+
+            <div class="hero-thumbs">
+                <img src="assets/images/site1.jpg" onclick="changeImage(this)">
+                <img src="assets/images/site2.jpg" onclick="changeImage(this)">
+                <img src="assets/images/site3.jpg" onclick="changeImage(this)">
+            </div>
+
+        </div>
+
+        <div class="hero-right">
+            <h1>PK Builders – Crafting Strong Foundations for the Future</h1>
+            <p class="subtitle">Trusted civil engineering & construction company delivering quality and durability.</p>
+
+            <ul class="hero-features">
+                <li>Residential & Commercial Construction</li>
+                <li>Road Works & Infrastructure Development</li>
+                <li>Industrial Projects & Warehouses</li>
+                <li>Quality-driven Materials & Skilled Workforce</li>
+            </ul>
+
+            <button class="btn-primary big">Get a Free Quote</button>
+        </div>
+    </section>
+
+
+    <!-- SERVICES -->
+    <section id="specs" class="spec-section">
+        <div class="container">
+            <h2 class="section-title">Our Core Services</h2>
+
+            <table class="spec-table">
+                <tr><td>Residential Buildings</td><td>Apartments, Villas, Individual Homes</td></tr>
+                <tr><td>Commercial Construction</td><td>Offices, Shops, Complexes</td></tr>
+                <tr><td>Road & Infrastructure</td><td>Road laying, Drainage, Culverts</td></tr>
+                <tr><td>Industrial Projects</td><td>Factories, Warehouses, Plants</td></tr>
+                <tr><td>Renovation Works</td><td>Interior, Exterior, Structural Repairs</td></tr>
+                <tr><td>Contracting Services</td><td>Turnkey Projects, Civil Contracts</td></tr>
+            </table>
+        </div>
+    </section>
+
+
+    <!-- WHY CHOOSE PK BUILDERS -->
+    <section id="features" class="features-section container">
+        <h2 class="section-title">Why Choose PK Builders?</h2>
+
+        <div class="features-grid">
+            <div class="feature-card">
+                <img src="assets/images/icon1.jpg" class="icon">
+                <h3>Premium Quality</h3>
+                <p>We use top-grade materials ensuring long-term durability.</p>
+            </div>
+
+            <div class="feature-card">
+                <img src="assets/images/icon2.jpg" class="icon">
+                <h3>Expert Engineers</h3>
+                <p>Highly skilled civil engineers & trained workforce.</p>
+            </div>
+
+            <div class="feature-card">
+                <img src="assets/images/icon3.jpg" class="icon">
+                <h3>On-Time Delivery</h3>
+                <p>We plan and execute every project with perfect timelines.</p>
+            </div>
+
+            <div class="feature-card">
+                <img src="assets/images/icon4.jpg" class="icon">
+                <h3>Safety First</h3>
+                <p>Strict safety measures ensure secure onsite operations.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- PROJECT SLIDER -->
+    <section id="applications" class="app-section">
+        <div class="container">
+            <h2 class="section-title">Our Project Expertise</h2>
+
+            <div class="app-slider">
+                <button class="slider-btn" id="appPrev">&#10094;</button>
+
+                <div class="app-track" id="appTrack">
+                    <div class="app-card">Apartment Construction</div>
+                    <div class="app-card">Shopping Complex Projects</div>
+                    <div class="app-card">Road Development Works</div>
+                    <div class="app-card">Industrial Buildings</div>
+                    <div class="app-card">Interior & Renovation</div>
+                </div>
+
+                <button class="slider-btn" id="appNext">&#10095;</button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FAQ -->
+    <section id="faq" class="faq-section container">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+
+        <div class="faq-item">
+            <div class="faq-question">Do you take turnkey construction projects?</div>
+            <div class="faq-answer">Yes, PK Builders handles complete end-to-end turnkey solutions.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">What areas do you operate in?</div>
+            <div class="faq-answer">We serve across Tamil Nadu & nearby regions for major projects.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Do you offer 3D design & planning?</div>
+            <div class="faq-answer">Yes, we provide architectural planning, 3D elevations, and layouts.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Are the materials provided by you?</div>
+            <div class="faq-answer">Yes, we use certified, quality-tested materials for all works.</div>
+        </div>
+    </section>
+
+
+    <!-- CONTACT MODAL -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span id="closeModal" class="close">&times;</span>
+            <h3>Contact PK Builders</h3>
+
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Email">
+            <textarea placeholder="Your Message"></textarea>
+
+            <button class="btn-primary full">Submit</button>
+        </div>
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <p>© 2026 PK Builders — Building Dreams with Strength.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
